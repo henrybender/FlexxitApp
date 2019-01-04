@@ -1,0 +1,33 @@
+
+App Name: Flexxit
+
+App Tagline: Get fit – anywhere!
+
+View:
+![Screenshot1](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3274.jpg)
+![Screenshot2](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3275.jpg)
+![Screenshot3](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3276.jpg)
+![Screenshot4](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3277.jpg)
+![Screenshot5](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3278.jpg)
+![Screenshot6](https://github.coecis.cornell.edu/amp389/flexxit3.0/blob/master/UNADJUSTEDNONRAW_thumb_3279.jpg)
+
+Some important feature to note include the link from the "Play Song" button to a song on soundcloud. The choice of songs is randmonized from an array of many song urls, choosing a random integer at the index to choose in the array. Also, another important feature includes the social media post view, which is accessible through the toolbar on the view of workouts, and also integrates the data entered by the user on the post description view into a post using an API. 
+
+Description:
+Our app is meant to make working out a more enjoyable and accessible experience. The workouts provided are easy to complete in a short amount of time, allowing users to spend a few minutes when they have time to complete an exercise. Our goal was to increase to activeness and health of individuals who are often too busy for the long commitment of a workout. Furthermore, our app is aimed at making the experience of working out enjoyable. We link songs to every workout so the user can complete each exercise for the length of a song, choosing as many workouts in a session as they would like or have time for. We also thought a social component, where users can post about the workouts they do and like other users' posts, would help motivate people to stay activate and fit. 
+
+Requirements:
+iOS
+- all the components are formatted with AutoLayout using NSLayoutConstraint
+- the view with social media posts utilizes a UITableView, the view with the workouts listed utilizes a UICollectionView
+- use a toolbar as the UINavigationController between the view with workouts listed and the view with social media posts (the page with workouts listed uses a modal view controller to navigate to the workout description view and again to navigate from the workout despcription to the view where users input their post)
+- the integrated API allows us to take the data from the view where the user inputs the information for their post, and then creates a post on the social media view with the ability to like posts
+
+Backend
+- uses Flask and SQLAlchemy to store data and interact with the frontend (has post, get, and delete methods)
+- is deployed to Google Cloud and is actively functioning
+
+Additional Notes:
+We had planned to use the Apple Music API or Spotify API to allow users to play songs from these applications by pressing a button. However, in office hours, we were told this would be extremely complicated and should instead hard code urls for songs. This is why we chose to format our app in this way since we were unable to find any form of music API that would allow such task in a feasible amount of time to complete this project.
+
+
